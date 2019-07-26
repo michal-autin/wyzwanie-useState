@@ -12,7 +12,6 @@ it("should increment a counter", () => {
   });
   const button = document.querySelector("button");
   const pElement = document.querySelector("p");
-  console.log(button.innerHTML);
   act(() => {
     for (let i = 0; i < 3; i++) {
       button.dispatchEvent(new MouseEvent("click", { bubbles: true }));

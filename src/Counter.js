@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 
 export default function Counter() {
   // TODO dodać stan lokalny z wykorzystaniem useStAte
-  const [value, setValue] = useState(0)
+  const [value, setValue] = useState(0);
 
   const increase = () => {
-    setValue(value + 1)
-  }
+    setValue(s => s + 1);
+  };
   const decrease = () => {
-    setValue(value - 1)
-  }
+    setValue(s => s - 1);
+  };
 
   return (
     <div>
@@ -17,5 +17,5 @@ export default function Counter() {
       <button onClick={increase}>+</button>
       <button onClick={decrease}>-</button>
     </div>
-  )
+  );
 }
