@@ -3,12 +3,14 @@ import ReactDOM from "react-dom";
 
 import Counter from "./Counter";
 import CandyDispenser from "./CandyDispenser";
+import DualCounter from "./DualCounter";
 
 function App() {
   return (
     <div>
       <CandyDispenser />
       <Counter />
+      <DualCounter />
       <hr />
       <h1>Wyzwanie: useState</h1>
       <p>To wyzwanie polega na dokończeniu prostej aplikacji śledzącej wartość licznika. Tym razem użyjemy do tego Hooks API.</p>

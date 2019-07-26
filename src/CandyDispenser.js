@@ -3,9 +3,9 @@ import React from "react";
 function CandyDispenser() {
   const initialCandies = ["snickers", "skittles", "twix", "milky way"];
   const [candies, setCandies] = React.useState(initialCandies);
-  const dispense = candy => {
+  const dispense = React.useCallback(candy => {
     setCandies(allCandies => allCandies.filter(c => c !== candy));
-  };
+  });
   return (
     <div>
       <h1>Candy Dispenser</h1>
