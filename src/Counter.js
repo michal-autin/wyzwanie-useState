@@ -5,10 +5,10 @@ export default function Counter() {
   const [value, setValue] = useState(0)
 
   const increase = () => {
-    setValue(s => s + 1)
+    setValue(value + 1)
   }
   const decrease = () => {
-    setValue(s => s - 1)
+    setValue(value - 1)
   }
 
   return (
