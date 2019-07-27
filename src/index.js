@@ -1,9 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 
-import Counter from "./Counter";
-import CandyDispenser from "./CandyDispenser";
-import DualCounter from "./DualCounter";
+// import DualCounter from "./DualCounter";
+const ReactDOM = React.lazy(() => import("react-dom"));
+const DualCounter = React.lazy(() => import("./DualCounter"));
+const Counter = React.lazy(() => import("./Counter"));
+const CandyDispenser = React.lazy(() => import("./CandyDispenser"));
 
 function App() {
   return (
